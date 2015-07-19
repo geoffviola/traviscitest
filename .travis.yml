@@ -9,6 +9,8 @@ install:
 
 script: ./cmake-3.3.0-rc4/build/bin/cmake .
 
+after_success: ./cmake-3.3.0-rc4/build/bin/ctest .
+
 os:
   - linux
   - osx

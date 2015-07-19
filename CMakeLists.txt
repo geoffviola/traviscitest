@@ -3,3 +3,6 @@ project(traviscitest)
 
 add_executable(traviscitest Main.cpp)
 
+enable_testing()
+add_test(RunProgram traviscitest)
+
