@@ -7,7 +7,9 @@ compiler:
 install:
   - ./get_cmake.sh
 
-script: ./cmake-3.3.0-rc4/build/bin/cmake .
+script: 
+  - ./cmake-3.3.0-rc4/build/bin/cmake .
+  - make -j5
 
 after_success: ./cmake-3.3.0-rc4/build/bin/ctest .
 
