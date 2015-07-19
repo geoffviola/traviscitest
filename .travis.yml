@@ -4,8 +4,8 @@ compiler:
   - gcc
   - clang
 
-before_install:
-  - . get_cmake.sh
+install:
+  - ./get_cmake.sh
 
 script: ./cmake-3.3.0-rc4/build/bin/cmake .
 
