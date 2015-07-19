@@ -17,6 +17,7 @@ deploy:
   file: traviscitest-1.3.2-Linux.tar.Z
   skip_cleanup: true
   on:
+    tags: true
     repo: geoffviola/traviscitest
 os:
 - linux
